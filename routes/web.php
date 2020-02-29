@@ -12,9 +12,9 @@
 */
 
 $router->group(['prefix' => 'api'], function () use ($router) {
-    $router->get('/kucings', 'KucingController@index');
+    $router->get('/kucing', 'KucingController@index');
     $router->get('/kucing/{id}', 'KucingController@show');
-    $router->post('/kucings', 'KucingController@create');
+    $router->post('/kucing', 'KucingController@create');
     $router->post('/kucing/{id}', 'KucingController@update');
     $router->delete('/kucing/{id}', 'KucingController@destroy');
 });
