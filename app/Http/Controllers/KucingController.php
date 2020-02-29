@@ -69,6 +69,8 @@ class KucingController extends Controller
   }
 
   //* Fungsi menghapus data
+  //* you must add hidden method _method = delete
+  // to use this method
   public function destroy($id)
   {
     $kucing = Kucing::findOrFail($id);
